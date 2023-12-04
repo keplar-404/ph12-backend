@@ -5,23 +5,16 @@ const updateAdoptedStatus = async (req, res, next) => {
 
   try {
     const pet = await Pet.findById(petId);
-    const adoptionRequests = pet.adoptionReqUserId;
 
-    if (adoptionRequests.length > 0) {
-      pet.adopted = {
-        status: true,
-      };
+    pet.adopted = {
+      status: true,
+    };
 
-      const updatedPet = await pet.save();
-      res.status(200).json({
-        pet: updatedPet,
-        message: "Adoption status updated successfully",
-      });
-    } else {
-      res.status(200).json({
-        message: "No adoption requests found for this pet",
-      });
-    }
+    const updatedPet = await pet.save();
+    res.status(200).json({
+      pet: updatedPet,
+      message: "Adoption status updated successfully",
+    });
   } catch (error) {
     next(error);
   }
