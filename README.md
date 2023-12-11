@@ -8,7 +8,7 @@ https://pet-adoption-donation-frontend.onrender.com/
 * JWT
 * Create, read, update, delete pet info
 * Create, read, update, delete donation campaign info
-* User functinality
-* Admin functinality
+* User
+* Admin 
 ## Tech Stack
 Node, Express, Mongodb, MVC architecture, JWT, Mongoose
