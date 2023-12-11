@@ -11,4 +11,5 @@ https://pet-adoption-donation-frontend.onrender.com/
 * User
 * Admin 
 ## Tech Stack
-Node, Express, Mongodb, MVC architecture, JWT, Mongoose
+**Frontend:** https://github.com/keplar-404/ph12-frontend
+**Backend:** Node, Express, Mongodb, MVC architecture, JWT, Mongoose
